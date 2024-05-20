@@ -1,4 +1,4 @@
-package Python.comparison.list;
+package python.comparison.bogdan.list;
 
 import com.google.common.collect.Lists;
 import helpers.coloredString.Logger;
@@ -13,7 +13,7 @@ public class PythonList {
 //        program_1();
 //        List String to List<Character>
 //        program_2();
-        program_3();
+//        program_3();
     }
 
     private static void program_1() {
@@ -142,22 +142,23 @@ public class PythonList {
 
         String text = "some text";
 
-//        1)
+//        1) Преобразовать в массив char[]
         List<Character> chars = new ArrayList<>();
 
         for (char c : text.toCharArray()) {
             chars.add(c);
         }
 
-//        2)
+//        2) Через IntStream
         List<Character> chars_other = text.chars()
                 .mapToObj(c -> (char) c)
                 .toList();
 
 
-//        3)
+//        3) Через split(), но получим список строк из 1 символа
         List<String> chars_other_list = Arrays.asList(text.split(""));
 
+//        4) Библиотека google.guava Lists.charactersOf(String text)
         List<Character> chs = Lists.charactersOf(text);
 
         System.out.println("chars = " + chars);
@@ -171,7 +172,6 @@ public class PythonList {
 
     private static void program_3() {
         printSection("Program_3. ");
-
 
 
         printSectionEnding();

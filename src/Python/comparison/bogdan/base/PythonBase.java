@@ -1,6 +1,4 @@
-package Python.comparison.base;
-
-import helpers.coloredString.Logger;
+package python.comparison.bogdan.base;
 
 import java.util.*;
 
@@ -28,13 +26,14 @@ public class PythonBase {
 //        program_8();
 //        String splitting/joining
 //        program_9();
-
+//        program_10();
+        program_11();
 
         printArticleEnding();
     }
 
     private static void program_1() {
-        printSection("Program_1. Python. Форматирование целых чисел с выводом");
+        printSection("Program_1. python. Форматирование целых чисел с выводом");
 
         int number;
 
@@ -241,6 +240,39 @@ public class PythonBase {
         System.out.println(Arrays.toString(origin.split(" ")));
         System.out.println(String.join("_,", origin.split(" ")));
 
+
+        printSectionEnding();
+    }
+
+    private static void program_10() {
+        printSection("Program_10. Аргументы переменной длины");
+
+        vla("maxim", "max");
+
+        vlad(new String[]{"maxim", "max"});
+        vlad(new String[]{"maxim", "max"}, new String[]{"cola", "german"});
+
+        printSectionEnding();
+    }
+
+    private static void vla(String... values) {
+        System.out.println(Arrays.toString(values));
+    }
+
+    private static void vlad(String[]... values) {
+        System.out.println(Arrays.deepToString(values));
+    }
+
+    private static int a = 10;
+
+    private static void program_11() {
+        printSection("Program_11. Scopes");
+
+        int a = 10;
+        PythonBase.a = 20;
+
+        System.out.println(STR."a = \{a}");
+        System.out.println(STR."PythonBase.a = \{PythonBase.a}");
 
         printSectionEnding();
     }

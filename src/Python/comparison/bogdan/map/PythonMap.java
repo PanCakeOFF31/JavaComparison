@@ -1,4 +1,4 @@
-package Python.comparison.map;
+package python.comparison.bogdan.map;
 
 import lombok.Builder;
 import lombok.Data;
