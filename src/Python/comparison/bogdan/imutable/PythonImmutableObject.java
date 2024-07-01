@@ -5,7 +5,6 @@ import java.util.List;
 
 import static helpers.Helpers.printSection;
 import static helpers.Helpers.printSectionEnding;
-import static java.lang.StringTemplate.STR;
 
 public class PythonImmutableObject {
     public static void main(String[] args) {
