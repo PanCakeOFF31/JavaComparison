@@ -69,7 +69,7 @@ public class Chapter_4 {
         String value = "March";
 
         Lists.charactersOf(value);
-        String asd = STR."asd/{}";
+        String asd = "asd/{}";
 
         printSectionEnding();
     }

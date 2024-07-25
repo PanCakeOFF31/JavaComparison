@@ -1,4 +1,4 @@
-package rust.comparison.base;
+package rust.comparison.basics;
 
 import static helpers.Helpers.printSection;
 import static helpers.Helpers.printSectionEnding;

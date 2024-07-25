@@ -62,7 +62,7 @@ public class Chapter_5 {
         System.out.println("set1 = " + set1);
         System.out.println("set2 = " + set2);
 
-        System.out.println(STR."Сравнение set1 с set2 даст \{set1.equals(set2)}");
+//        System.out.println("Сравнение set1 с set2 даст \{set1.equals(set2)}");
 
         printSectionEnding();
     }

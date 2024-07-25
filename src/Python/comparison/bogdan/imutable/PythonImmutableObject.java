@@ -47,12 +47,12 @@ public class PythonImmutableObject {
 
         List<String> list2 = new ArrayList<>(list1);
 
-        System.out.println(STR."list1 = \{list1}");
-        System.out.println(STR."list2 = \{list2}");
-        System.out.println(STR."list1 == list2 - \{list1 == list2}");
+        System.out.println("list1 = " + list1);
+        System.out.println("list2 = " + list2);
+        System.out.println("list1 == list2 - " + (list1 == list2));
 
         int a = 10, b = 20;
-        System.out.println(STR."\{a}, \{b}");
+        System.out.println(a + "" + b);
 
         printSectionEnding();
     }
@@ -74,9 +74,9 @@ public class PythonImmutableObject {
 
         List<String> list2 = (List<String>) ((ArrayList) list1).clone();
 
-        System.out.println(STR."list1 = \{list1}");
-        System.out.println(STR."list2 = \{list2}");
-        System.out.println(STR."list1 == list2 - \{list1 == list2}");
+        System.out.println("list1 = " + list1);
+        System.out.println("list2 = " + list2);
+        System.out.println("list1 == list2 - " + (list1 = list2));
 
 
         printSectionEnding();
